@@ -32,7 +32,8 @@ class App extends React.Component {
     })
   }
 
-   addToList = () => {
+   addToList = (e) => {
+     e.preventDefault(); 
     const newTask = {
       id: Date.now(),
       task: this.state.taskTitle,
@@ -40,7 +41,10 @@ class App extends React.Component {
     };
     this.setState({
       todos: [...this.state.todos, newTask],
-    })
+      taskTitle: ''
+       
+    }
+    )
     
   }
   render() {	 
@@ -56,6 +60,7 @@ class App extends React.Component {
       </div>	      
     );	   
   }	  }
+  
 
 
   export default App; 
