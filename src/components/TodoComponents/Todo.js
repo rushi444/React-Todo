@@ -1,14 +1,21 @@
 import React from 'react';
 import './Todo.css';
 
- const Todo = ({item}) =>{
-    return (
-        <p key={item.id}>
-            {item.task}
-            {item.completed}
+ const Todo = (props) => {
+    let classNames = 'item'; 
+    if (props.item.completed) {
+        classNames += ' completed'; 
+    }
 
-         </p>
-    );
+    function updateSelected() {
+        props.toggleComplete(props.item.id); 
+    }
+
+    return (
+        <div className={classNames} onClick={updateSelected}>
+            <p>{props.item.name}</p>
+        </div>
+    ); 
 }
 
  export default Todo;

@@ -1,6 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap');
+* {
+    font-family: 'Ropa Sans', sans-serif; 
+}
 #root {
     border: 1px solid black; 
     text-align: center; 
     width: 500px; 
     height: 700px; 
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../pexels-photo-1157255.jpeg); 
+}
+.App {
+    align-items: center; 
+}
+.item {
+    color: white;
+    background-color: deepskyblue;
+    height: 70px; 
+    width: 30%;
+    margin-left: 35%;  
+    margin-right: 35%;
+    font-size: 20px; 
+    
+}
+
+.completed {
+    color: black; 
+    text-decoration: line-through; 
+}
+
+.submitbutton {
+    width: 100px; 
+    height: 50px;
+    background-color: deepskyblue; 
+    color: white; 
+    border-radius: 7px; 
+    border: 1px solid white;
+    margin-left: 10px; 
+    font-size: 20px; 
+
+}
+
+.submitbutton:hover {
+    background-color: white; 
+    color: deepskyblue; 
+}
+
+.textinput {
+    height: 50px; 
+    border: none; 
+    border: 2px solid deepskyblue; 
+    border-radius: 7px; 
+    font-size: 20px; 
+}
+
+.clearbutton {
+    margin-top: 20px; 
+    width: 100px; 
+    height: 50px;
+    background-color: deepskyblue; 
+    color: white; 
+    border-radius: 7px; 
+    border: 1px solid white;
+    font-size: 17px; 
+}
+
+.clearbutton:hover {
+    background-color: white; 
+    color: deepskyblue; 
+}
+h1 {
+    color: white; 
+    font-size: 60px; 
+}
+
+p{
+    padding-top: 12px; 
 }
